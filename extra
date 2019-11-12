@@ -1,0 +1,26 @@
+/////////////Step1/////////
+
+Win
+> Run cmd as admin
+> npm install -g create-react-app
+
+Mac/linux
+> Open terminal
+> sudo npm install -g create-react-app
+
+//////////////Step 2 ///////////////
+> Navigate to the folder
+> create-react-app firstapp
+> cd firstapp
+> npm start
+> http://localhost:3000/
+
+Functional Component       Class Component
+Light in weight              Heavy as compare Functional
+
+
+function add(a,b){
+    return a+b
+}
+
+var add = (a,b) => { return a+b}
