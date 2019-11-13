@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './components/header';
+import NewsList from './components/NewsList';
+
 const App = () => {
     return(
-        <h1>This is my react component</h1>
+        <div>
+            <Header/>
+            <NewsList/>
+        </div>
+        
     )
 }
 

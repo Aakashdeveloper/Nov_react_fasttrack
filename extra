@@ -15,8 +15,11 @@ Mac/linux
 > npm start
 > http://localhost:3000/
 
-Functional Component       Class Component
-Light in weight              Heavy as compare Functional
+Functional Component            Class Component
+Light in weight                 Heavy as compare Functional
+Cannot Maintain state           Can Maintain state
+Dumb Component                  Intellegent component
+Display                         Logic
 
 
 function add(a,b){
@@ -24,3 +27,18 @@ function add(a,b){
 }
 
 var add = (a,b) => { return a+b}
+
+=> state & props
+
+
+state => act like local variable
+props
+
+
+Component A       Props         Component B 
+state="abc"       ====>         state
+
+
+tag name
+classname
+id
