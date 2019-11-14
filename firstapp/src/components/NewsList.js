@@ -1,14 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NewsList extends Component {
-    render(){
+ const NewsList = (props) => {
+     console.log("In News List>>>>", props)
+     const items = props.newsData.map((mynews) => {
+         return(
+             <div>
+                 <h3>{mynews.title}</h3>
+                 <div>
+                     {mynews.feed}
+                 </div>
+             </div>
+         )
+     })
         return(
             <React.Fragment>
-                <h1>This is Class Component</h1>
-                <hr/>
+                {items}
             </React.Fragment>
         )
-    }
+
 }
 
 export default NewsList;
+
+/*
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+*/
