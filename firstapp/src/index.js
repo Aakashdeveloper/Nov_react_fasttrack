@@ -11,15 +11,27 @@ class App extends Component {
         super()
 
         this.state={
-            news: JSON
+            news: JSON,
+            filtered: JSON
         }
     }
+
+    filterNews(keyword){
+        const output =  this.state.news.filter((data) => {
+            return data.title.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+        })
+
+        this.setState({filtered:output})
+    }
+
+    //var a = [0,1,2,3,4]
+    //a.filter((data)=> data*1)
 
     render(){
         return(
             <div>
-                <Header/>
-                <NewsList newsData={this.state.news}/>
+                <Header userText={(keyword)=>{this.filterNews(keyword)}}/>
+                <NewsList newsData={this.state.filtered}/>
             </div>
             
         )
@@ -29,3 +41,10 @@ class App extends Component {
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 
+
+/*
+
+var add =(a,b) => { return a+b }
+
+add(1,2)
+*/

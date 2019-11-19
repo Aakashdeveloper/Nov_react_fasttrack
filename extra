@@ -42,3 +42,22 @@ state="abc"       ====>         state
 tag name
 classname
 id
+
+
+var a = [0,1,2,3,4]
+a.map((data)=> data*1)
+a.filter((data)=> data*1)
+
+a.filter((data) => data%2==0)
+
+
+1,2,true
+0 -1, false, null ,undefined
+
+
+parent => child => Props
+child => parent => callback function
+
+https://ngapi4.herokuapp.com/api/getProducts
+
+npm i react-router-dom
