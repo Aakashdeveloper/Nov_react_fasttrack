@@ -10,11 +10,13 @@ class Posts extends Component {
                 <div class="panel-body">
                     <h2>Posts Page</h2>
                     <br/>
-                    <Link to="/" className="btn btn-success">JavaScript</Link>
+                    <Link to="/posts/javascript" className="btn btn-success">JavaScript</Link>
                     <br/>
-                    <Link to="/" className="btn btn-success">React</Link>
+                    <Link to="/posts/react" className="btn btn-success">React</Link>
                     <br/>
-                    <Link to="/" className="btn btn-success">Node</Link>
+                    <Link to="/posts/node" className="btn btn-success">Node</Link>
+                    <br/>
+                    <Link to="/posts/angular" className="btn btn-success">Angular</Link>
                 </div>
             </div>
         )
