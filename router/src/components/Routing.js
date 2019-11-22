@@ -5,6 +5,7 @@ import Home from './Home';
 import Posts from './Posts';
 import Profile from './Profile';
 import PostDetails from './PostDetails'
+import HookComp from './ReactHooks'
 
 class Routing extends Component {
     render(){
@@ -27,6 +28,7 @@ class Routing extends Component {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/post">Post</Link></li>
                             <li><Link to="/profile">Profile</Link></li>
+                            <li><Link to="/hooks">Hooks</Link></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -40,6 +42,8 @@ class Routing extends Component {
                     <Route path="/post" component={Posts}></Route>
                     <Route path="/posts/:topic" component={PostDetails}></Route>
                     <Route path="/profile" component={Profile}></Route>
+                    <Route path="/hooks" component={HookComp}></Route>
+                    
                 </div>
             </BrowserRouter>
         )
