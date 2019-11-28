@@ -66,3 +66,23 @@ npm i react-router-dom
 npm i -g json-server
 
 json-server --watch db.json --port 8900
+
+
+/***********
+Step to create package.json
+***********/
+> Navigate to the folder using cmd
+> npm init
+> answer all question
+> type "yes"
+
+npm i -g nodemon
+
+
+npm i -g @aakashdeveloper/create-node-app
+
+function add(a,b){
+    return a+b
+}
+
+var add = (a,b) => { return a+b}
