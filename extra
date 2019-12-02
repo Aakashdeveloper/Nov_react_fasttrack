@@ -86,3 +86,11 @@ function add(a,b){
 }
 
 var add = (a,b) => { return a+b}
+
+
+sudo mongod --dbpath /System/Volumes/Data/data/db
+
+SQl       NoSQL
+database  database
+table     collections
+row       document
