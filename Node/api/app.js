@@ -3,6 +3,9 @@ var port = 8900;
 var app = express();
 var moviesRouter = require('./routes/moviesRouter')
 var artistRouter = require('./routes/artistRouter');
+var cors =require('cors');
+
+app.use(cors());
 
 app.get('/',(req,res) => {
     res.send("This is home page")
